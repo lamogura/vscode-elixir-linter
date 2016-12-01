@@ -1,12 +1,12 @@
 # README
 
-"ruby-linter" is a wrapper for `ruby -wc`.
+"elixir-linter" is a wrapper around `elixirc`.
 
-It expects ruby to be installed and already added to the path. If it is installed but cannot be found, add the path to your preferences as seen below.
+It expects elixir and elixirc to be installed and already added to the path. If it is installed but cannot be found, add the path to your preferences as seen below.
 
 ```json
 {
-	"ruby.linter.executablePath": "PathToExecutable"
+	"elixir.linter.executablePath": "PathToExecutable"
 }
 ```
 
@@ -18,9 +18,9 @@ By default the linter will lint on the fly but can be changed to linting as you 
 
 ```json
 {
-	"ruby.linter.run": "onType"
+	"elixir.linter.run": "onType"
 }
 ```
 
 ## Acknowledgements
-The extension architecture is based off of the PHPValidationProvider from the built-in [php extension](https://github.com/Microsoft/vscode/tree/master/extensions/php).
+The extension architecture is forked from the [vscode-ruby-linter](https://github.com/hoovercj/vscode-ruby-linter) extension and the implementation is a port of [sublimelinter-contrib-elixirc](https://packagecontrol.io/packages/SublimeLinter-contrib-elixirc) extension for SublimeText (WIP).
